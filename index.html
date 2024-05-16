@@ -9,27 +9,46 @@
    <!-- 
     Create a basic HTML calculator with 
         buttons for each digit ✅
-        each of the functions
-        an “Equals” key
+        each of the functions ✅
+        an “Equals” key ✅
+
     Do not worry about wiring up the JS just yet.
-    There should also be a display for the calculator. Go ahead and fill it with some dummy numbers so it looks correct.
-    Add a “clear” button. 
-    -->
-    <div class="digits-container">
-        <div class="digits-row">
+
+    There should also be a display for the calculator. Go ahead and fill it with some dummy numbers so it looks correct. ✅
+    Add a “clear” button. ✅
+-->
+<div class="calculator-container">
+    <div class="calculator-row">
+        <input type="text" id="calculator-display" value="32879.24" readonly>
+    </div>
+    <div class="calculator-row">
+        <button>AC</button>
+        <button>+/-</button>
+        <button>%</button>
+        <button class="divide">/</button>
+        </div>
+        <div class="calculator-row">
             <button>7</button>
             <button>8</button>
             <button>9</button>
+            <button class="multiply">*</button>
         </div>
-        <div class="digits-row">
+        <div class="calculator-row">
             <button>4</button>
             <button>5</button>
             <button>6</button>
+            <button class="subtract">-</button>
         </div>
-        <div class="digits-row">
+        <div class="calculator-row">
             <button>1</button>
             <button>2</button>
             <button>3</button>
+            <button class="add">+</button>
+        </div>
+        <div class="calculator-row">
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
         </div>
     </div>
 </body>
