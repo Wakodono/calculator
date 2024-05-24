@@ -25,6 +25,8 @@ buttons.forEach(button => {
             handleOperatorClick(button.innerText);
         } else if (button.id === 'equals') {
             handleEqualsClick();
+        } else if (button.classList.contains('clear')) {
+            handleClearClick();
         }
     });
 });
@@ -84,6 +86,18 @@ function handleEqualsClick() {
         operator = null;
         number2 = null;
     }
+}
+
+function handleClearClick() {
+    number1 = null;
+    operator = null;
+    number2 = null;
+    
+    displayValue = "0";
+
+    shouldResetDisplay = false;
+
+    updateDisplay();
 }
 
 function add(a, b) { return a + b; }
